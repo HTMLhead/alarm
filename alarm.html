@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>밥먹을 시간을 기대하며</title>
 </head>
+
 <body>
-    <button onclick ='alarm()'>시이작</button>
-    <script src = 'alarm.js'></script>
+    <button onclick='alarm()'>시이작</button>
+    <script>
+        function alarm() {
+            alert(`시이-작!`)
+            const timeData = 1000 * 60 * 50
+            setTimeout(function () { alert("스트레칭할 시간입니다."); }, timeData);
+        }
+    </script>
 </body>
+
 </html>
